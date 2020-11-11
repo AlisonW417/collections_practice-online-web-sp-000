@@ -43,8 +43,10 @@ end
 def add_s(array_of_strings)
   new_array = []
   array_of_strings.each_with_index do |string, index|
-    if index != 1
-      new_array << string + "s" 
+    if index == 2
+      new_array << string
+    else 
+      new_array << string + "s"
     end 
   end 
   new_array
