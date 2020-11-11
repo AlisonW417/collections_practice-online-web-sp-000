@@ -41,5 +41,11 @@ def sum_array(array_of_integers)
 end 
 
 def add_s(array_of_strings)
-  
+  new_array = []
+  array_of_strings.each_with_index do |string, index|
+    if index != string[1]
+      new_array << string + "s" 
+    end 
+  end 
+  new_array
 end 
